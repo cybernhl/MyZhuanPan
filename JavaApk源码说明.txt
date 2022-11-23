@@ -1,0 +1,19 @@
+本项目是一个基于安卓的水果老虎机游戏源码，初始的时候会有一些积分，如果积分用完了就需要购买积分，目前积分模式是输入管理员密码就可以加分。默认的管理员密码是javaapk。另外还有一个按钮是可以直接唤起QQ通过手机QQ联系作者的按钮，我保留了。感兴趣的可以自己看一下。
+                ╔═══════════════╗
+                ║       安卓源码服务专家       ║
+  ╔══════╣───────────────╠══════╗
+  ║            ║    http://www.javaapk.com    ║            ║
+  ║            ╚═══════════════╝            ║
+　║                                                          ║
+　║JavaApk声明：                                             ║
+  ║   1) 程序如果跑不起来需要自调，javaapk做船但不帮您扬帆。 ║
+  ║   2) 免费例子大全http://www.javaapk.com/demo不定期更新。 ║
+  ║   3) 如有版权争议欢迎随时联系javaapk。                   ║
+  ║   4) 源码仅限学习交流，切勿移作他用。                    ║
+  ║   5) 转载请保留本源码说明，赠人玫瑰，手留余香。          ║
+　║                                                          ║
+  ║           JavaApk —— 安卓源码服务专家                  ║
+  ║           联系方式 :QQ18805870  javaapk@qq.com           ║
+  ║    ╔═══════════════════════╗    ║
+  ╚══╣    安卓源码专业站 http://www.JavaApk.com     ╠══╝
+        ╚═══════════════════════╝

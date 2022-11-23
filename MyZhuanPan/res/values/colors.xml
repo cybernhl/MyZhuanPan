@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tv_bg">#00ffff</color>
+    <color name="tv_set">#ff0000</color>
+    <color name="linear">#bb00cc</color>
+    <color name="linear2">#cc00ff</color>
+    <color name="linear3">#00ff00</color>
+    <color name="tv_yellow">#00ffff</color>
+    <color name="tv_linear">#00ff55</color>
+
+</resources>

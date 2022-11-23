@@ -1,0 +1,760 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myzhuanpan.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00aaff"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="幸运水果总动员"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff00"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_apple"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/apple"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="苹果"
+                    android:textColor="#ff00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_xigua"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/xigua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="西瓜"
+                    android:textColor="#00aa00" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_huanggua"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/huanggua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="黄瓜"
+                    android:textColor="#ffff00" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_lizi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/lizi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="梨子"
+                    android:textColor="#5500ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#00ff00" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="2"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#00ff00" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="#00ff00" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_chengzi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/chengzi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="橙子"
+                    android:textColor="#aa00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_kaijiang"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="开奖"
+                    android:textColor="#ff0000" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_longyan"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/longyan"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="龙眼"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_shizi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/longyan"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="龙眼"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="35dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_today"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="请选择"
+                    android:textColor="#aa00ff" />
+
+                <TextView
+                    android:id="@+id/tv_beishu"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="x1"
+                    android:textColor="#ff0000" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="35dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="40dip"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_juzi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/huanggua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="黄瓜"
+                    android:textColor="#ffff00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_huolongguo2"
+                    android:layout_width="0dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/huolongguo"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="火龙果"
+                    android:textColor="#aa00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@drawable/lizi" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="40dip"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_huolongguo1"
+                    android:layout_width="0dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/huolongguo"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="火龙果"
+                    android:textColor="#00aa00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_chengzi2"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/chengzi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="橙子"
+                    android:textColor="#aa00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="0.5"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="总分:"
+                    android:textColor="#ff00ff" />
+
+                <TextView
+                    android:id="@+id/tv_now_print"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1.5"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="50"
+                    android:textColor="#ff00ff" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="40dip"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_xigua2"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/xigua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="西瓜"
+                    android:textColor="#00aa00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_xigua3"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/xigua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="西瓜"
+                    android:textColor="#00aa00" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="0.5"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="得分"
+                    android:textColor="#ff00ff" />
+
+                <TextView
+                    android:id="@+id/tv_defen"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1.5"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="0"
+                    android:textColor="#ff00ff" />
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="40dip"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_chengzi3"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/chengzi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="橙子"
+                    android:textColor="#aa00ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#00ff00" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="2"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="1"
+                    android:background="#00ff00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_TaoZi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/chengzi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="橙子"
+                    android:textColor="#aa00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_pipa"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableLeft="@drawable/apple"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="苹果"
+                    android:textColor="#ff00ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_youzi"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/lizi"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="梨子"
+                    android:textColor="#5500ff" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:background="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" />
+
+                <TextView
+                    android:id="@+id/tv_putao"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@color/tv_bg"
+                    android:drawableRight="@drawable/xigua"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="西瓜"
+                    android:textColor="#00aa00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_apple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/apple"
+                android:gravity="center"
+                android:text="苹果"
+                android:textColor="#ff00ff" />
+
+            <TextView
+                android:id="@+id/btn_xigua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/xigua"
+                android:gravity="center"
+                android:text="西瓜"
+                android:textColor="#00aa00" />
+
+            <TextView
+                android:id="@+id/btn_huanggua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/huanggua"
+                android:gravity="center"
+                android:text="黄瓜"
+                android:textColor="#fff000" />
+
+            <TextView
+                android:id="@+id/btn_lizi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/lizi"
+                android:gravity="center"
+                android:text="梨子"
+                android:textColor="#5500ff" />
+
+            <TextView
+                android:id="@+id/btn_chengzi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/chengzi"
+                android:gravity="center"
+                android:text="橙子"
+                android:textColor="#aa00ff" />
+
+            <TextView
+                android:id="@+id/btn_longyan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="#55ff66"
+                android:drawableTop="@drawable/longyan"
+                android:gravity="center"
+                android:text="龙眼"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_beishu_two"
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x2"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_beishu_three"
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x3"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_beishu_one"
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x1"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x1"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x1"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_beishu_for"
+                android:layout_width="0dip"
+                android:layout_height="15dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="x4"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/tv_set" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff00"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前下注:" />
+
+            <TextView
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#ff00ff"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text=" + "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_now_xiazhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="0"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/btn_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#ff00ff"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="—"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/btn_shangfen"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="#00ff00"
+                android:gravity="center"
+                android:text="上分" />
+
+            <TextView
+                android:id="@+id/btn_begin"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="#00ff00"
+                android:gravity="center"
+                android:text="开始" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
