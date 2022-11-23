@@ -1,0 +1,3 @@
+rootProject.name = "MyZhuanPan"
+include ':app'
+project(":app").projectDir = file("./MyZhuanPan")

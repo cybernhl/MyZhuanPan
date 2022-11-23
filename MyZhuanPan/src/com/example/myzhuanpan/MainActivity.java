@@ -157,11 +157,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 	}
 
-	/** ³õÊ¼»¯dialog */
+	/** å ´å®Žè¶™dialog */
 	private void diaLogInit() {
 		dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog_shangfen);
-		dialog.setTitle("ÉÏ·Ö");
+		dialog.setTitle("å¥»ç…¦");
 		mBtnDialogSure = (TextView) dialog.findViewById(R.id.btn_dialog_sure);
 		mBtnDialogClean = (TextView) dialog.findViewById(R.id.btn_dialog_clean);
 
@@ -233,7 +233,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			num++;
 			mFenShu--;
 			if (mFenShu >= 0 && mFenShu < allPrint) {
-				// ·ÖÊý²»ÄÜÐ¡ÓÚ0£¬Ò²²»ÄÜ´óÓÚ×ÜÊý
+				// ç…¦æ…ç¥¥å¤”è‹¤è¡¾0ã„›ç©ç¥¥å¤”æ¹®è¡¾è»žæ…
 				mTvNowXiaZhu.setText(mFenShu + "");
 				mTvNowPrint.setText((num) + "");
 			}
@@ -244,7 +244,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			num = 0;
 			mFenShu = 0;
 
-			if (!mTvToday.getText().toString().equals("ÇëÑ¡Ôñ")
+			if (!mTvToday.getText().toString().equals("ïž˜æå¯")
 					&& !mTvNowXiaZhu.getText().toString().equals("0")) {
 				mBtnBegin.setClickable(false);
 				mTvDeFen.setText("0");
@@ -257,7 +257,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 				player2.start();
 			} else {
-				Toast.makeText(this, "ÇëÑ¡ÔñÏàÓ¦Ë®¹ûºÍ×¢Êý", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "ïž˜æå¯çœˆèŒ¼é˜¨å½†ç¿è›æ…", Toast.LENGTH_SHORT).show();
 			}
 
 			break;
@@ -268,7 +268,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 
 		case R.id.btn_dialog_sure:
-			// È·¶¨°´Å¥£¬ÕâÀï²»Ð´break£¬ÊÇÎªÁË·½±ã¹Ø±Õdialog¡£
+			// ï éš…åŒè½ã„›æ¶´çˆµç¥¥è¿¡breakã„›å²†å³ˆè³¸æºæ™žå£½æ••dialogï¹
 			String num = mEdtDialogNum.getText().toString();
 			String psd = mEdtDialogPsd.getText().toString();
 			if (numDengyuNum(num, psd)) {
@@ -285,7 +285,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			String url=null;
 			url="mqqwpa://im/chat?chat_type=wpa&uin=542886872&version=1";
-							//uin¸ÄÎªÄ¿±êQQºÅ£¡
+							//uinèœŠå³ˆé†´æ¢“QQç˜ã„
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
 			dialog.dismiss();
@@ -305,7 +305,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onResume();
 	}
 
-	/** ÓÃÓÚÑéÖ¤ÉÏ·ÖÈ¨ÏÞ */
+	/** èššè¡¾æ¡„ç—å¥»ç…¦ïŸ²ç™¹ */
 	private boolean numDengyuNum(String num, String psd) {
 		if (!num.equals("") && !psd.equals("")) {
 			if (psd.equals("javaapk")) {
@@ -327,7 +327,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 	}
 
-	/** ³õÊ¼»¯textview±³¾°ÑÕÉ« */
+	/** å ´å®Žè¶™textviewæŽ–åŠ“æ™‡ä¼Ž */
 	private void initTv() {
 		mTvApple.setBackgroundColor(getResources().getColor(R.color.tv_bg));
 		mTvXiGua.setBackgroundColor(getResources().getColor(R.color.tv_bg));
@@ -369,7 +369,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 			Message message = new Message();
 			message.what = 2;
-			message.obj = "ÖÐ½±";
+			message.obj = "ç¬¢è”£";
 			handler.sendMessage(message);
 		}
 	}
@@ -621,14 +621,14 @@ public class MainActivity extends Activity implements OnClickListener {
 							.toString()) + ZhongJiangMoney) + "");
 
 					Toast.makeText(MainActivity.this,
-							"¹§Ï²Äú£¬ÖÐ½±ÁË£¡£¡£¡" + "¹²" + ZhongJiangMoney + "Ôª", 0)
+							"é³©ç‚°è Ÿã„›ç¬¢è”£è³¸ã„ã„ã„" + "åƒ•" + ZhongJiangMoney + "å•‹", 0)
 							.show();
 					mTvDeFen.setText(ZhongJiangMoney + "");
-					mTvToday.setText("ÇëÑ¡Ôñ");
+					mTvToday.setText("ïž˜æå¯");
 					mTvNowXiaZhu.setText("0");
 				} else {
-					Toast.makeText(MainActivity.this, "ºÜÒÅº¶£¬ÔÙÀ´Ò»´Î°É£¡", 0).show();
-					mTvToday.setText("ÇëÑ¡Ôñ");
+					Toast.makeText(MainActivity.this, "ç«­ç–»ç†„ã„›å©¬æ‡‚ç¨æ£’å‹˜ã„", 0).show();
+					mTvToday.setText("ïž˜æå¯");
 					mTvNowXiaZhu.setText("0");
 				}
 
@@ -636,7 +636,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		};
 	};
 
-	/** ²úÉúÒ»¸öËæ»úÊý£¬ÓÃÀ´¾ö¶¨×ªµÄÈ¦Êý */
+	/** èŽ‰æ±œç¨è·ºå‘´å„‚æ…ã„›èššæ‡‚æ¨µéš…è›Œè…”ïŸ°æ… */
 	private int getRanman() {
 		int max = 200;
 		int min = 100;
@@ -646,7 +646,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	}
 
-	/** ²úÉúÒ»¸öËæ»úÊý£¬ÓÃÀ´È·¶¨ÖÐ½±ºÅÂë */
+	/** èŽ‰æ±œç¨è·ºå‘´å„‚æ…ã„›èššæ‡‚ï éš…ç¬¢è”£ç˜éŽ¢ */
 	private int getRana() {
 		int max = 18;
 		int min = 1;
@@ -654,7 +654,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		return random.nextInt(max) % (max - min + 1) + min;
 	}
 
-	/** ²úÉúÒ»¸öËæ»úÊý£¬ÓÃÀ´È·¶¨¸èÇú */
+	/** èŽ‰æ±œç¨è·ºå‘´å„‚æ…ã„›èššæ‡‚ï éš…è²‰ïž§ */
 	private int getMusicId() {
 		int max = 5;
 		int min = 0;
@@ -662,14 +662,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		return random.nextInt(max) % (max - min + 1) + min;
 	}
 
-	/** ×Ö·û´®±äÎªintÀàÐÍ */
+	/** è¶¼ç«æ¹æ›¹å³ˆintæ¿¬å€° */
 	private int strToInt(String str) {
 
 		return Integer.valueOf(str).intValue();
 
 	}
 
-	/** È¡µÚ¶þ¸ö×Ö·û´® */
+	/** ïŸ«è´åª¼è·ºè¶¼ç«æ¹ */
 	private int toInt(String str) {
 
 		return strToInt(str.substring(1));
